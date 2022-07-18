@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Keyboard Warrior</title>
+</head>
+<body>
+
+    <div class="game">
+
+        <h1 class="game__title">
+            Keyboard Warrior
+        </h1>
+
+        <div class="game__modal">
+            <div class="player-1">
+                <p class="player__title">
+                    Player 1
+                </p>
+
+                <div class="player__score player-1__score">
+                    0
+                </div>
+
+                <p class="player__key-text">Your key:</p>
+                <div class="player__key">
+                    Space
+                </div>
+
+                <div class="player__progress player-1__progress">
+                    <div class="player__progress-circle player-1__progress-circle"></div>
+                </div>
+            </div>
+    
+            <div class="player-2">
+                <p class="player__title">
+                    Player 2
+                </p>
+                <div class="player__score player-2__score">
+                    0
+                </div>
+
+                <p class="player__key-text">Your key:</p>
+                <div class="player__key">
+                    Enter
+                </div>
+
+                <div class="player__progress player-2__progress">
+                    <div class="player__progress-circle player-2__progress-circle"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="player-1__modal player__modal">
+            <p class="player__modal-text">Player 1 won!</p>
+            <a class="player__modal-btn btn" href="#">Play Again</a>
+        </div>
+
+        <div class="player-2__modal player__modal">
+            <p class="player__modal-text">Player 2 won!</p>
+            <a class="player__modal-btn btn" href="#">Play Again</a>
+        </div>
+    </div>
+    
+    <!-- BOXICONS -->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+    <!-- JS FILE -->
+    <script src="script.js"></script>
+</body>
+</html>

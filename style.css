@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #232946;
+    font-family: 'Poppins', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+h1 {
+    color: #fffffe;
+}
+
+p {
+    color: #b8c1ec;
+}
+
+.btn {
+    color: #232946;
+    background: #eebbc3;
+}
+
+.game {
+    padding-bottom: 200px;
+}
+
+.game__title {
+    text-align: center;
+    margin-bottom: 200px;
+
+    position: relative;
+}
+
+.game__title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 50%;
+}
+
+.game__modal {
+    display: flex;
+}
+
+.player-1, .player-2 {
+    width: 50vw;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.player__title {
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.player__score {
+    color: #eebbc3;
+    font-size: 65px;
+    margin-bottom: 80px;
+}
+
+.player__key {
+    display: inline;
+
+    color: #fffffe;
+    font-size: 24px;
+    padding: 5px 20px;
+    border: 1px solid #fffffe;
+    border-radius: 5px;
+}
+
+.player__key-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.player__progress {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+.player-1__progress {
+    top: 0;
+    right: 30px;
+}
+.player-2__progress {
+    top: 0;
+    left: 30px;
+}
+
+
+.player__progress::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(crown.png);
+    top: -28px;
+    right: -7.5px;
+}
+
+.player__progress-circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 999;
+    background: #fffffe;
+
+    right: -10px;
+    bottom: 0;
+}
+
+
+/* Modals */
+.player__modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+}
+
+.player__modal.active {
+    visibility: visible;
+}
+
+.player__modal-text {
+    font-size: 50px;
+    margin-bottom: 150px;
+}
+
+.player__modal-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

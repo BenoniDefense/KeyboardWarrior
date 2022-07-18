@@ -16,7 +16,7 @@ let againBtn = document.querySelectorAll('.player__modal-btn');
 
 
 
-document.addEventListener('keydown', function(e) { 
+document.addEventListener('keyup', function(e) { 
     if (e.keyCode == '32') {
         score1.textContent = Number(score1.textContent) + 1;
 
